@@ -12,19 +12,20 @@ public class Cartera : MonoBehaviour
     GameObject confirmarCompra;
     [SerializeField]
     GameObject nosaldo;
-
+    
     void Start()
     {
         saldo = Random.Range(450f, 950f);
         labelSaldo.text = saldo.ToString("000.00") + "$";
     }
 
-    public void RestartSaldo(float precio)
+    public void RestartSaldo(string nameItem,float precio)
     {
         if (saldo > precio)
         {
             saldo -= precio;
             labelSaldo.text = saldo.ToString("000,00") + "$";
+            confirmarCompra.SetActive(true);
 
         }
         else

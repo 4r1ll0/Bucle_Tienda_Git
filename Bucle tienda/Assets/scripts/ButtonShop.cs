@@ -8,7 +8,7 @@ public class ButtonShop : MonoBehaviour
     //[SerializeField]
     TextMeshProUGUI textButton;
     [SerializeField]
-   // Wallet myWallet;
+    //Wallet myWallet;
 
     //[SerializeField]
     string nameItem = "Objeto";
@@ -23,7 +23,7 @@ public class ButtonShop : MonoBehaviour
     }
     void ClickEnBotonDeTienda()
     {
-        //myWallet.RestarSaldo(priceItem);
+        //myWallet.RestarSaldo(nameItem,priceItem); ; ;
     }
  
 }
